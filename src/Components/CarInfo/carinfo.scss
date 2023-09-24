@@ -1,0 +1,152 @@
+.carinfo-parent-container{
+    background-color: #000000 ;
+    height:100vh;
+    width:100vw;
+    margin:0;
+    max-width: 100vw;
+    display:flex;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+
+    .header-style{
+        font-size: 2.5rem;
+        color:#ffffff;
+        width:100%
+        
+    }
+    .sub-header-style{
+        font-size: 1.5rem;
+        color:#ffffff;
+        width:100%
+    }
+    .child-container-left{
+        display: flex;
+        width: 50%;
+        height:100%;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 3.5rem;
+      
+        
+        
+    }
+    .child-container-right{
+        display: flex;
+        width: 50%;
+        height:100%;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+
+    .white-strip-1{
+        width:3rem;
+        background-color: #ffffff;
+        height:147vh;
+        position: absolute;
+        top:0;
+        right: 0;
+        transform: rotate(45deg);
+        transform-origin: top right;
+        overflow: hidden;
+        z-index: 2;
+        
+    }
+
+
+    .white-strip-2{
+        width:3rem;
+        background-color: #ffffff;
+        height:147vh;
+        position: absolute;
+        top:0;
+        right: 0;
+        transform: rotate(45deg);
+        transform-origin: top;
+        margin-right: -90px;
+        overflow: hidden ;
+        z-index: 2;
+    }
+    .carImg{
+        z-index: 3;
+        height:30rem
+    }
+    .button{
+        width:10rem;
+        height:3rem;
+        background-color: #5de0e6;
+        border-radius: 50rem;
+        color: #ffffff;
+        font-weight: 700;
+    }
+
+}
+
+@media only screen and (max-width: 1080px) {
+    .carinfo-parent-container{
+        flex-direction: column;
+
+        .child-container-left{
+            width: 100%;
+            .header-style{
+                font-size: 1.5rem;
+                color:#ffffff;
+                width:100%;
+            }
+            .sub-header-style{
+                font-size: 1rem;
+                color:#ffffff;
+                width:100%;
+            }
+        }
+    
+        .child-container-right{
+            width:100%;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .white-strip-1{
+            width: 3rem;
+            background-color: #ffffff;
+            height: 147vh;
+            position: absolute;
+            display: flex;
+            transform-origin: center;
+            overflow: hidden;
+            z-index: 2;
+            position: absolute;
+            top: 15%;
+            left: 22.5%;
+            transform: rotate(45deg);
+            
+        }
+    
+    
+        .white-strip-2{
+            width: 3rem;
+            background-color: #ffffff;
+            height: 200vh;
+            position: absolute;
+            display: flex;
+            transform-origin: center;
+            overflow: hidden;
+            z-index: 2;
+            position: absolute;
+            top: 15%;
+            left: 0%;
+            transform: rotate(45deg);
+        }
+
+        .carImg{
+            z-index: 3;
+            height:15rem
+        }
+      
+    }
+    
+  }
